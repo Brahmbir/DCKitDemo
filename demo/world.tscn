@@ -250,8 +250,8 @@ mesh = SubResource("CapsuleMesh_036b0")
 
 [node name="CameraRig" type="Node3D" parent="Pause" unique_id=1403619105 node_paths=PackedStringArray("target")]
 script = ExtResource("4_gcgup")
-target = NodePath("../CharacterBody3D")
 settings = ExtResource("5_wfs5x")
+target = NodePath("../CharacterBody3D")
 metadata/_custom_type_script = "uid://wstqasc3mjga"
 
 [node name="Camera3D" type="Camera3D" parent="Pause/CameraRig" unique_id=1874417297]

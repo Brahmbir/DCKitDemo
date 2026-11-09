@@ -1,12 +1,11 @@
 extends Node
 
-const ADDON_PATH: String = "res://addons/dc_kit"
+const ADDON_PATH: String = "res://addons/dckit"
 
 
 static func addon_export(
 	addon_path: String,
 	output_zip: String,
-	logger: DCLogger,
 	extra_files: Dictionary = { },
 ) -> Error:
 	var output_dir := output_zip.get_base_dir()
@@ -25,7 +24,7 @@ static func addon_export(
 		return err
 
 	for source in extra_files:
-		err = _zip_file(zipper, logger, source, extra_files[source], added_files)
+		err = _zip_file(zipper, source, extra_files[source], added_files)
 		if err != OK:
 			zipper.close()
 			return err
@@ -141,13 +140,12 @@ static func _zip_directory(zipper: ZIPPacker, directory: String, added_files: Di
 
 static func _zip_file(
 	zipper: ZIPPacker,
-	logger: DCLogger,
 	source: String,
 	destination: String,
 	added_files: Dictionary,
 ) -> Error:
 	if not FileAccess.file_exists(source):
-		logger.warn("Extra file not found: %s" % source)
+		DCKit.log_warn("Extra file not found: %s" % source)
 		return OK
 
 	if added_files.has(destination):
@@ -230,10 +228,9 @@ func _ready() -> void:
 			var err := addon_export(
 				ADDON_PATH,
 				output_zip,
-				ctx.log,
 				{
-					"res://LICENSE": "addons/dc_kit/LICENSE",
-					"res://README.md": "addons/dc_kit/README.md",
+					#"res://LICENSE": "addons/dc_kit/LICENSE",
+					#"res://README.md": "addons/dc_kit/README.md",
 					#"res://icon.svg": "addons/dc_kit/icon.svg",
 				},
 			)

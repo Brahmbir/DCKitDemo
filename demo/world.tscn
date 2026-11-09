@@ -1,4 +1,4 @@
-[gd_scene format=4 uid="uid://qv7uw2xl7r64"]
+[gd_scene format=3 uid="uid://qv7uw2xl7r64"]
 
 [ext_resource type="Shader" uid="uid://2qrvegyxlca5" path="res://demo/grid.gdshader" id="1_f3sb7"]
 [ext_resource type="Script" uid="uid://by3lqskkcmq47" path="res://demo/world.gd" id="1_fj7yv"]
@@ -162,29 +162,21 @@ shader_parameter/line_color = Color(0.4, 0.4, 0.45, 1)
 shader_parameter/grid_scale = 1.0
 shader_parameter/line_thickness = 0.02
 
-[sub_resource type="ArrayMesh" id="ArrayMesh_2ssnh"]
-_surfaces = [{
-"aabb": AABB(-48.943, -6, -50, 100, 10, 100),
-"attribute_data": PackedByteArray("AACAPwAAAABRTnw/mpkZPgAAgD8AAIA/AACAPwAAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAAABIGX88mpkZPlFOfD+amRk+AACAPwAAAAAAAAAAAAAAAAAAgD8AAIA/AACAPwAAgD9RTnw/mpkZPlFOfD8AAIA/AACAPwAAgD8AAIA/UU58PwAAAAAAAIA/AACAPwAAgD8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAgD8AAIA/UU58P4/C9TxRTnw/AACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAAAAAAAAgD+PwvU8UU58PwAAAAAAAAAAAACAPwAAAAAAAAAAAAAAAEgZfzyamRk+AAAAAAAAAABIGX88AACAP0gZfzyamRk+AAAAAAAAAAAAAAAAAACAPwAAgD8AAIA/AACAPwAAgD8AAAAAAAAAAAAAAAAAAIA/AACAPwAAgD8AAIA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAP0gZfzwAAIA/AACAPwAAgD8AAAAAAAAAAAAAAAAAAIA/AACAPwAAAACPwvU8SBl/PAAAgD9IGX88AAAAAAAAAACPwvU8UU58P4/C9TxIGX88AACAPwAAAAAAAAAAAAAAAI/C9TxIGX88"),
-"format": 34359738391,
-"material": SubResource("ShaderMaterial_fj7yv"),
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 60,
-"vertex_data": PackedByteArray("osVDwgAAwMAAAEjCAAA+wgAAkMAAAEjCosVDwgAAgEAAAEjCosVDwgAAwMAAAEjCosVDwgAAgEAAAEjCosVDwgAAwMAAAEhCosVDwgAAwMAAAEjCAABGQgAAkMAAAEjCAAA+wgAAkMAAAEjCosVDwgAAwMAAAEjCosVDwgAAwMAAAEhCXjpMQgAAwMAAAEjCosVDwgAAgEAAAEjCAAA+wgAAkMAAAEjCAAA+wgAAgEAAAEjCosVDwgAAgEAAAEjCAAA+wgAAgEAAAEjCosVDwgAAgEAAAEhCosVDwgAAwMAAAEhCosVDwgAAgEAAAEjCosVDwgAAgEAAAEhCosVDwgAAgEAAAEhCAAA+wgAAgEAAAEjCAAA+wgAAgEAAADxCosVDwgAAwMAAAEhCosVDwgAAgEAAAEhCXjpMQgAAgEAAAEhCosVDwgAAgEAAAEhCAAA+wgAAgEAAADxCXjpMQgAAgEAAAEhCosVDwgAAwMAAAEjCXjpMQgAAwMAAAEjCAABGQgAAkMAAAEjCXjpMQgAAwMAAAEjCAABGQgAAgEAAAEjCAABGQgAAkMAAAEjCosVDwgAAwMAAAEhCXjpMQgAAwMAAAEhCXjpMQgAAwMAAAEjCosVDwgAAwMAAAEhCXjpMQgAAgEAAAEhCXjpMQgAAwMAAAEhCXjpMQgAAwMAAAEjCXjpMQgAAwMAAAEhCXjpMQgAAgEAAAEhCXjpMQgAAwMAAAEjCXjpMQgAAgEAAAEjCAABGQgAAgEAAAEjCXjpMQgAAwMAAAEjCXjpMQgAAgEAAAEhCXjpMQgAAgEAAAEjCXjpMQgAAgEAAAEjCAABGQgAAgEAAADxCAABGQgAAgEAAAEjCXjpMQgAAgEAAAEhCAAA+wgAAgEAAADxCAABGQgAAgEAAADxCXjpMQgAAgEAAAEjCXjpMQgAAgEAAAEhCAABGQgAAgEAAADxC/////wAA/z//////AAD/P/////8AAP8/AAD/f/9//n8AAP9//3/+fwAA/3//f/5//////wAA/z//////AAD/P/////8AAP8//38AAP//AAD/fwAA//8AAP9/AAD//wAA/////wAA/z//////AAD/P/////8AAP8//3//////AAD/f/////8AAP9//////wAAAAD/f/9//n8AAP9//3/+fwAA/3//f/5//3//////AAD/f/////8AAP9//////wAA/3//fwAA/z//f/9/AAD/P/9//38AAP8//3//////AAD/f/////8AAP9//////wAA/////wAA/z//////AAD/P/////8AAP8//////wAA/z//////AAD/P/////8AAP8//38AAP//AAD/fwAA//8AAP9/AAD//wAA/3//fwAA/z//f/9/AAD/P/9//38AAP8/////f/9//n////9//3/+f////3//f/5//////wAA/z//////AAD/P/////8AAP8/////f/9//n////9//3/+f////3//f/5//3//////AAD/f/////8AAP9//////wAA/3//////AAD/f/////8AAP9//////wAA/3//////AAD/f/////8AAP9//////wAA")
-}, {
-"aabb": AABB(-47.5, -4.5, -50, 97, 8.5, 97),
-"attribute_data": PackedByteArray("AACAPwAAgD+amRk+j8L1PAAAgD+PwvU8AAAAAAAAAADsUXg/AAAAAOxReD8AAIA/AACAPwAAgD8AAAAAAACAPwAAgD+amRk+AACAPwAAgD+amRk+AACAP5qZGT6PwvU8AAAAAAAAAADsUXg/AACAPwAAAAAAAIA/AACAPwAAAAAAAIA/7FF4P5qZGT4AAAAAAACAP+xReD+amRk+7FF4P5qZGT4AAAAAAAAAAAAAgD8AAAAAmpkZPgAAgD+amRk+"),
-"format": 34359738391,
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 24,
-"vertex_data": PackedByteArray("AAA+wgAAkMAAADxCAAA+wgAAgEAAAEjCAAA+wgAAkMAAAEjCAAA+wgAAkMAAADxCAAA+wgAAkMAAAEjCAABGQgAAkMAAAEjCAAA+wgAAkMAAADxCAABGQgAAkMAAADxCAAA+wgAAgEAAADxCAAA+wgAAkMAAADxCAAA+wgAAgEAAADxCAAA+wgAAgEAAAEjCAAA+wgAAkMAAADxCAABGQgAAkMAAAEjCAABGQgAAkMAAADxCAABGQgAAkMAAADxCAABGQgAAkMAAAEjCAABGQgAAgEAAADxCAABGQgAAkMAAAEjCAABGQgAAgEAAAEjCAABGQgAAgEAAADxCAABGQgAAkMAAADxCAABGQgAAgEAAADxCAAA+wgAAgEAAADxC////f/9/AID///9//38AgP///3//fwCA/3//////////f/////////9//////////////wAA/7//////AAD/v/////8AAP+/////f/9/AID///9//38AgP///3//fwCA/3//////////f/////////9/////////AAD/f/9/AIAAAP9//38AgAAA/3//fwCAAAD/f/9/AIAAAP9//38AgAAA/3//fwCA/////wAA/7//////AAD/v/////8AAP+/")
-}]
-
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_aqk2v"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_036b0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wfs5x"]
+bg_color = Color(0.13431707, 0.13431707, 0.13431707, 0.9647059)
+expand_margin_left = 1.0
+expand_margin_top = 5.0
+expand_margin_right = 1.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k5q1k"]
+bg_color = Color(0.55745506, 0, 0.0006804726, 1)
+expand_margin_top = 4.0
+expand_margin_bottom = 4.0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k5q1k"]
 cull_mode = 2
@@ -232,15 +224,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.5, -3)
 operation = 2
 size = Vector3(97, 10, 100)
 
-[node name="CSGBakedMeshInstance3D" type="MeshInstance3D" parent="." unique_id=389459662]
-mesh = SubResource("ArrayMesh_2ssnh")
-
 [node name="Pause" type="Node3D" parent="." unique_id=986160782]
 
-[node name="CharacterBody3D" type="CharacterBody3D" parent="Pause" unique_id=888643814 node_paths=PackedStringArray("camera_rig")]
+[node name="CharacterBody3D" type="CharacterBody3D" parent="Pause" unique_id=888643814 node_paths=PackedStringArray("camera_rig", "hp_bar", "marker_root")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.057, -1, 0)
 script = ExtResource("3_tlwt5")
 camera_rig = NodePath("../CameraRig")
+hp_bar = NodePath("../CameraRig/Camera3D/MarginContainer/ProgressBar")
+marker_root = NodePath("../MarkerRoot")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Pause/CharacterBody3D" unique_id=1819330354]
 shape = SubResource("CapsuleShape3D_aqk2v")
@@ -250,16 +241,60 @@ mesh = SubResource("CapsuleMesh_036b0")
 
 [node name="CameraRig" type="Node3D" parent="Pause" unique_id=1403619105 node_paths=PackedStringArray("target")]
 script = ExtResource("4_gcgup")
-settings = ExtResource("5_wfs5x")
 target = NodePath("../CharacterBody3D")
+settings = ExtResource("5_wfs5x")
 metadata/_custom_type_script = "uid://wstqasc3mjga"
 
 [node name="Camera3D" type="Camera3D" parent="Pause/CameraRig" unique_id=1874417297]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.057, 0, 3)
 
+[node name="MarginContainer" type="MarginContainer" parent="Pause/CameraRig/Camera3D" unique_id=58447735]
+anchors_preset = -1
+anchor_left = 0.601
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 64
+theme_override_constants/margin_top = 64
+theme_override_constants/margin_right = 64
+theme_override_constants/margin_bottom = 64
+
+[node name="ProgressBar" type="ProgressBar" parent="Pause/CameraRig/Camera3D/MarginContainer" unique_id=1309685016]
+layout_mode = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_wfs5x")
+theme_override_styles/fill = SubResource("StyleBoxFlat_k5q1k")
+show_percentage = false
+
+[node name="MarkerRoot" type="Node3D" parent="Pause" unique_id=1539431474]
+
+[node name="Origin" type="Marker3D" parent="Pause/MarkerRoot" unique_id=1099529160]
+transform = Transform3D(0.947044, 0, -0.3211037, 0, 1, 0, 0.3211037, 0, 0.947044, 0, 0, 21.32507)
+
+[node name="Label3D" type="Label3D" parent="Pause/MarkerRoot/Origin" unique_id=1860463808]
+text = "Origin"
+
+[node name="TopOfBlock" type="Marker3D" parent="Pause/MarkerRoot" unique_id=1784864427]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8907909, 4.191464, -25.291441)
+
+[node name="Label3D" type="Label3D" parent="Pause/MarkerRoot/TopOfBlock" unique_id=268980129]
+text = "TopOfBlock"
+
 [node name="MultiMeshInstance3D" type="MultiMeshInstance3D" parent="." unique_id=796488434]
 multimesh = SubResource("MultiMesh_wfs5x")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=956785541]
-visible = false
-mesh = SubResource("QuadMesh_pvttc")
+[node name="CSGCombiner3D2" type="CSGCombiner3D" parent="." unique_id=592056108]
+material_override = SubResource("ShaderMaterial_2ssnh")
+autosmooth = true
+use_collision = true
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D2" unique_id=903724171]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7901077, -1.5739181, -25.07929)
+use_collision = true
+size = Vector3(15.264648, 7.1279297, 11.026489)
+material = SubResource("ShaderMaterial_fj7yv")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGCombiner3D2" unique_id=555633096]
+transform = Transform3D(1, 0, 0, 0, 0.9659258, -0.25881904, 0, 0.25881904, 0.9659258, -1.4458008, -6.6932683, -6.4607577)
+size = Vector3(15.571289, 10.135742, 29.85205)
+material = SubResource("ShaderMaterial_fj7yv")
